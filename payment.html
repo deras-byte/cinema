@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- Tambahkan Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark text-light">
+    <!-- Tambahkan navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html" style="color: #ffffff; font-size: 24px; font-weight: bold; text-decoration: none;">
+            MYMOVIE
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movie.html">Film</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Tentang Kami <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="socialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Media Sosial
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="socialDropdown">
+                        <a class="dropdown-item text-light" href="https://www.instagram.com/sp_cndr" target="_blank">
+                            Instagram <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="dropdown-item text-light" href="https://wa.me/6285786928756" target="_blank">
+                            WhatsApp <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a class="dropdown-item text-light" href="https://www.tiktok.com/@_mandhon" target="_blank">
+                            Tiktok <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="payment.html">Keranjang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Pilih Film untuk Membayar</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form id="paymentForm">
+                    <div class="form-group ">
+                        <label for="filmSelection">Pilih Film:</label>
+                        <select id="filmSelection" name="film" class="form-control bg-dark text-light">
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Tambahkan ke Keranjang</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-dark text-light">
+                    <div class="card-body">
+                        <h2 class="card-title">Keranjang</h2>
+                        <ul id="cartItems" class="list-group list-group-flush bg-dark text-light">
+                            <!-- Movie selections will appear here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tambahkan footer -->
+    <div class="container mt-5">
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50 text-center fixed-bottom">
+            <div class="row">
+                <div class="col-md-12 bg-dark text-white">
+                    <small>Copyright &copy; MYMOVIE</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/js/movie.js"></script>
+
+    <!-- Tambahkan Bootstrap JS dan jQuery jika diperlukan -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

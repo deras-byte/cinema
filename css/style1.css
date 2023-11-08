@@ -1,0 +1,19 @@
+.col-md-2 img {
+    /* Sesuaikan ukuran gambar untuk perangkat seluler */
+    padding-left: 20px;
+    padding-top: 20px;
+    object-fit: cover;
+}
+
+.card #card-title {
+    padding-top: 20px;
+}
+/* Untuk perangkat seluler */
+@media (max-width: 767px) {
+    .col-md-2 img {
+        /* Sesuaikan ukuran gambar untuk perangkat seluler */
+        padding-left: 20px;
+        width: 198px; /* Atur ukuran yang sesuai */
+        object-fit: cover;
+    }
+}
